@@ -153,8 +153,7 @@ public:
         result.column = tmp7.column;
         result.row = this->row;
         if (this->row != tmp7.row || this->column != tmp7.column) {
-            cout << "No valid of size" << endl;
-            return result;
+            throw "No valid of size";
         }
         for (int i = 0; i < this->row; ++i) {
             for (int j = 0; j < tmp7.column; ++j) {
